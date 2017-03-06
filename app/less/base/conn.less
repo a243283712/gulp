@@ -1,0 +1,118 @@
+
+@bg-color:#eaeef1;
+@color:#4f5f6f;
+@key-color:#2f3b4c;
+@blue:#2286d3;
+@ori:#fcb537;
+@shadow-color:#061327;
+@im-color:#4f5f6f;
+
+
+@k-color:#7e8e9f;
+
+
+
+@s1:#b08fac;
+@s2:#e4b225;
+@s3:#7cc47a;
+@s4:#76a4b3;
+@s5:#b8c143;
+@s6:#fa8762;
+@s7:#ff8761;
+
+@s8:#2286d3;
+
+
+@bg-s1:#b08fac;
+@bg-s2:#e4b225;
+@bg-s3:#7cc47a;
+@bg-s4:#76a4b3;
+@bg-s5:#b8c143;
+@bg-s6:#fa8762;
+@bg-s7:#ff8761;
+@bg-s8:#2286d3;
+.border-radius(){
+    border-radius: 5px;
+}
+.border(){
+    border: 1px solid @line-color;
+}
+//单行文字省略
+.omit() {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.omit-more(@number){
+    overflow: hidden;
+    display: -webkit-box; 
+    -webkit-line-clamp:@number;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+}
+
+.break(){
+  //word-wrap: break-word;  //智能断句
+  word-break:break-all;   //强制断句
+}
+
+//透明度
+// .opacity(@value) {
+//     opacity: @value;
+//     filter: Alpha(opacity = @value * 100);
+// }
+//盒子阴影
+.box-shadow (@x: 0, @y: 0, @blur, @spread, @color) {
+  -webkit-box-shadow: @arguments;
+  -moz-box-shadow: @arguments;
+  -o-kit-box-shadow: @arguments;
+  -ms-box-shadow: @arguments;
+   box-shadow: @arguments;
+}
+.box-shadow-all(@x: 0, @y: 0, @blur:8px, @spread:2px, @color:#dde3e7) {
+  -webkit-box-shadow: @arguments;
+  -moz-box-shadow: @arguments;
+  -o-kit-box-shadow: @arguments;
+  -ms-box-shadow: @arguments;
+  box-shadow: @arguments;
+  overflow-y: auto;
+}
+
+// transition
+
+.transition(){
+  -webkit-transition: all 1s linear 0s infinite;
+     -moz-transition: all 1s linear 0s infinite;
+      -ms-transition: all 1s linear 0s infinite;
+       -o-transition: all 1s linear 0s infinite;
+          transition: all 1s linear 0s infinite;
+}
+
+.rotate(@deg){
+    -webkit-transform: rotate(@deg);
+       -moz-transform: rotate(@deg);
+        -ms-transform: rotate(@deg);
+         -o-transform: rotate(@deg);
+            transform: rotate(@deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
